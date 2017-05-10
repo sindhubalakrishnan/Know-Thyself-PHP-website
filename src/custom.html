@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Welcome to Know Thyself Website</title>
+        <link type="text/css" href="css/stylesheet.css" rel="stylesheet">
+    </head> 
+        <body onload="phpLoad2();">
+            <ul>
+              <li><a href="home.html">About MBTI</a></li>
+              <li><a href="assessment.html">Assessment</a></li>
+              <li><a href="custom.html">Customized Tests</a></li>
+              <li><a href="questionnaire.html">Questionnaire</a></li>
+              <li class="dropdown"><a href="g" class="dropbtn">16 Personality Types</a>
+                <div class="dropdown-content">
+                  <a href="#">Guardian</a>
+                      <ul>
+    					<li><a href="#">ESTJ - "The Supervisors"</a></li>
+    					<li><a href="#">ISTJ - "The Inspectors"</a></li>
+    					<li><a href="#">ESFJ - "The Providers"</a></li>
+    					<li><a href="#">ISFJ - "The Protectors"</a></li>
+				      </ul>
+                  <a href="#">Rational</a>
+                      <ul>
+    					<li><a href="#">ENTJ - "The Fieldmarshals</a></li>
+    					<li><a href="#">INTJ - "The Masterminds"</a></li>
+    					<li><a href="#">ENTP - "The Inventors"</a></li>
+    					<li><a href="#">INTP - "The Architects"</a></li>
+				      </ul>
+                  <a href="#">Idealist</a>
+                      <ul>
+    					<li><a href="#">ENFJ - "The Teachers"</a></li>
+    					<li><a href="#">INFJ - "The Counselors"</a></li>
+    					<li><a href="#">ENFP - "The Champions"</a></li>
+    					<li><a href="#">INFP - "The Healers"</a></li>
+				      </ul>
+                  <a href="#">Artisan</a>
+                      <ul>
+    					<li><a href="#">ESTP - "The Promoters"</a></li>
+    					<li><a href="#">ISTP - "The Crafters"</a></li>
+    					<li><a href="#">ESFP - "The Performers"</a></li>
+    					<li><a href="#">ISFP - "The Composers"</a></li>
+				      </ul>
+                </div>
+              </li>
+            </ul>
+             <div id="res" data-target="cstomTest" onload="phpLoad2();"  >
+               
+              <?php include('cstomTest.php'); ?>
+            
+            </div>
+            
+            <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+            <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script src="jQuery/phpload.js"></script>
+            
+            
+        <br><br>
+     </div>
+
+        </body>
+</html> 

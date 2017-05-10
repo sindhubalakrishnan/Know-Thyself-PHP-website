@@ -1,0 +1,18 @@
+Email:
+Note: You may have change following code as per your requiment
+email_id max length 100 charcter
+
+update UserDetails  A , (select distinct userid from UserDetails  where email_addr=LTRIM(RTRIM('abc@gmail.com')) ) B
+set A.email_addr = CONCAT('old_', email_addr)
+where A.userid =B.userid;
+
+Insert into UserDetails (email_addr, created_date) values (LTRIM( RTRIM( emailid) ),NOW());
+
+select userid from UserDetails  where email_addr=LTRIM(RTRIM($email ),
+then save session variable:
+session_start(); // session start
+$_SESSION['s_emailid']=$email ;
+$_SESSION['userid']=$userid ;
+
+on assement Page:-
+So we don't need to create new entry for user on submit_assesment
